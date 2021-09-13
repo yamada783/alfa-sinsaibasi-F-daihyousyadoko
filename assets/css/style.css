@@ -147,7 +147,7 @@ button {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #b11919;
   margin-bottom: 20px;
   height: 100%;
 }
@@ -175,7 +175,7 @@ button {
   content: '';
   width: calc(100% - 60px);
   height: 7px;
-  background-color: #fcee21;
+  background-color: #b11919;
   position: absolute;
   top: -10px;
   left: 30px;
@@ -239,15 +239,15 @@ button {
 * Color
 *********************/
 .bg-color--keycolor {
-  background-color: #39b54a;
+  background-color: #100a40;
 }
 
 .bg-color--subcolor {
-  background-color: #d9e021;
+  background-color: #b3aa38;
 }
 
 .bg-color--gray {
-  background-color: #e6e6e6;
+  background-color: #3e0707;
 }
 
 /*********************
