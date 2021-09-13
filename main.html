@@ -34,8 +34,8 @@
         <section class="section">
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>さぁゲームを始めよう！</h2>
-            <p class="text-center">まずは、この学校の家庭科室の鍵のありかを知らなければ入ることができない。<br>
-              下の画像の謎を解き、鍵のありかをキーワード欄に入力しよう。</p>
+            <p class="text-center">まずは、水樹の縄を解かなければならない<br>
+              水樹から送られた写真から縄をほどけそうなものを見つけよう</p>
             <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
   
             <div class="container">
@@ -59,7 +59,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE1解答入力セクション　ここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>キーワードを入力</h2>
+            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>机</h2>
             <!------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示します。
               v-bind:correct="correctAnswer['stage1']['q1']" は正解の解答を指します。
@@ -84,10 +84,9 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">家庭科室の扉が開いた！<br>
-                さぁ先生を助けるため<br>
-                ３つステージの謎をとき、暗号を見つけ出そう！</div>
+              <div class="clear-message__title">STAGE：１  クリア</div>
+              <div class="clear-message__content">水樹の縄が解けた<br>
+             <br>今度は情報の源であろうパソコンを使うためにパスワードを解こう</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -106,15 +105,15 @@ Youtube貼り付けここまで -->
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家庭科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
-                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>机に置いてあった紙の謎を解明しよう</h2>
+              <p class="text-center"><br>
+                水樹から今度は答えがパソコンのパスワードであろう謎が書いてある紙の写真が送られてきた<br>
+                これを解くことでパソコンにログインできるはずだ</p>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
             <div class="container">
-              <h2 class="section-title"><span class="section-title__stage">STAGE：2</span>キーワードを入力</h2>
+              <h2 class="section-title"><span class="section-title__stage">STAGE：2</span>kyoubou</h2>
               <!-------------------------------------------------------------
                 class名"row"内のclass名"column"が横並びになります。
                 改行する場合は以下のように追加してください。
@@ -180,9 +179,9 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：2　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__title">STAGE：2　クリア</div>
+              <div class="clear-message__content">パソコンを開いてみると、あきらかに怪しい鍵付きフォルダとメモ帳が入っていたようだ<br>
+                このメモ帳に書いてある謎は鍵付きフォルダのパスワードになるはずだ</div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -197,10 +196,10 @@ Youtube貼り付けここまで -->
         <!-- STAGE3-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>家庭科室の課題とは</h2>
-            <p class="text-center">黒板から得たメッセージは、「食物の廃棄問題」だった。<br>
-              どうやら、廃棄にかかる費用がかかりすぎて小学校の運営が厳しくなったようだ。。<br>
-              これらを解決するための最後の謎を解いていこう！</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>鍵付きフォルダの中身とは</h2>
+            <p class="text-center">今度はパソコンに入っていた鍵付きフォルダのパスワードであろう<br>
+              メモ帳の謎を解いてほしいと水樹が言ってきた<br>
+              これが解けたらなにか大きな手掛かりが手に入る予感がする</p>
             <figure class="image__container">
               <img src="assets/images/nazo4.png" alt="">
             </figure>
@@ -211,7 +210,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE3-1解答入力セクションここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
+            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>きさらぎ</h2>
             <!-----------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。
               v-on:answer-input="answerInput($event, 'stage3', 1, 'final')" は送信ボタンをクリックした時の動作を決める関数です。
