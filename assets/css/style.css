@@ -247,7 +247,7 @@ button {
 }
 
 .bg-color--gray {
-  background-color: #3e0707;
+  background-color: #3e0707; 
 }
 
 /*********************
@@ -365,7 +365,7 @@ button {
 * header
 *****************/
 .header {
-  background-color: #fff;
+  background-color: #000;
   height: 60px;
 }
 
